@@ -1,0 +1,73 @@
+img {
+  max-width: 100%;
+  max-height: 90dvh;
+}
+.gallery-container {
+  background-color: white;
+  opacity: 0.95;
+  border-radius: 24px;
+  row-gap: 24px;
+  padding: 64px;
+}
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+.gallery-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.el-dialog {
+  background-color: black !important;
+}
+.gallery-arrow-wrapper {
+  background-color: black;
+  color: white !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 100%;
+  transition: 0.2s ease-in-out;
+}
+.gallery-arrow-wrapper:hover {
+  background-color: #aaaaaa;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery-container,
+  .review-container {
+    padding: 5%;
+  }
+  .review-container {
+    height: 260px;
+  }
+  .el-dialog {
+    padding: 0 !important;
+    padding-top: 30px !important;
+  }
+  .gallery-arrow-wrapper {
+    opacity: 0.5;
+    position: absolute !important;
+    top: calc(50% - 18px);
+  }
+  .gallery-arrow-wrapper:hover {
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .review-container {
+    height: 230px;
+  }
+  .review-item {
+    margin: 0;
+  }
+}

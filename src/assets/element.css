@@ -1,0 +1,47 @@
+/* BUTTON */
+
+.el-button--large {
+  --el-button-bg-color: var(--el-color-primary) !important;
+  --el-button-border-color: var(--el-color-primary) !important;
+  --el-button-active-bg-color: black !important;
+  --el-button-active-border-color: black !important;
+  --el-button-text-color: white !important;
+  --el-button-hover-bg-color: #063f74 !important;
+  --el-button-hover-border-color: #063f74 !important;
+  --el-button-hover-text-color: white !important;
+  min-height: 60px;
+  min-width: 150px;
+  border-width: 2px !important;
+  transition: 0.3s ease-in-out !important;
+}
+.el-button--large span {
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  transition: 0.3s ease-in-out !important;
+}
+
+/* DRAWER */
+
+.el-drawer {
+  background-color: var(--el-color-primary) !important;
+}
+.el-drawer__close-btn {
+  color: white !important;
+}
+
+/* TABS */
+
+.el-tabs__item {
+  font-size: large !important;
+  color: var(--el-color-primary) !important;
+  transition: 0.2s ease-in-out;
+}
+.el-tabs__item:hover {
+  color: var(--el-color-primary-light-7) !important;
+  transition: 0.2s ease-in-out;
+}
+@media only screen and (max-width: 450px) {
+  .el-tabs__item {
+    font-size: small !important;
+  }
+}
