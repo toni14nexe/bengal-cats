@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: TODO link/sitemap.xml
+Sitemap: https://thehouseofcheetah.com/sitemap.xml

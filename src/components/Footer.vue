@@ -5,6 +5,8 @@ import DollarIcon from './icons/DollarIcon.vue'
 import LogoIcon from './icons/LogoIcon.vue'
 import ShakeHandsIcon from './icons/ShakeHandsIcon.vue'
 import DocumentIcon from './icons/DocumentIcon.vue'
+import RoyalCaninIcon from './icons/RoyalCaninIcon.vue'
+import FIFeIcon from './icons/FIFeIcon.vue'
 
 const containerRef = ref(null)
 const isVisible = ref(false)
@@ -117,6 +119,19 @@ onUnmounted(() => {
         </ElCol>
       </ElRow>
 
+      <ElRow justify="center" v-motion-slide-top :duration="1000" :delay="1000">
+        <a href="https://www.royalcanin.com" target="_blank">
+          <ElIcon :size="80">
+            <RoyalCaninIcon class="royal-canin-logo" />
+          </ElIcon>
+        </a>
+        <a href="https://fifeweb.org" target="_blank">
+          <ElIcon :size="80">
+            <FIFeIcon class="fife-logo" />
+          </ElIcon>
+        </a>
+      </ElRow>
+
       <ElRow justify="center" align="middle" v-motion-slide-top :duration="1000" :delay="1200">
         <a href="/policy" class="footer-text">Politika web stranice</a>
       </ElRow>
@@ -176,12 +191,20 @@ a {
 .logo-wrapper {
   width: 180px;
   height: auto;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 .logo {
   width: 180px;
   height: auto;
   color: var(--el-color-primary);
+}
+.royal-canin-logo {
+  width: 100%;
+  color: var(--el-color-primary);
+}
+.fife-logo {
+  color: var(--el-color-primary);
+  height: 40px;
 }
 .media-icon-wrapper {
   margin: 8px 16px;
